@@ -2,10 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting.jsx';
 import Counter from '../components/Counter.vue';
+import CounterSvelte from '../components/Counter.svelte';
 const pageTitle = "Home Page";
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h2>My awesome blog subtitle</h2>
 	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
   <Counter client:load/>
+  <CounterSvelte client:load />
 </BaseLayout>

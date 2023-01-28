@@ -7,6 +7,9 @@ import preact from "@astrojs/preact";
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
+import svelte from "@astrojs/svelte";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [preact(), vue()]
+  integrations: [preact(), vue(), svelte()]
 });
